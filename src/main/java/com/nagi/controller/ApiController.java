@@ -15,4 +15,12 @@ public class ApiController {
 	    public String sayHello() {
 	        return "Hello, World!";
 	    }
+	    
+	    @GetMapping("/hello123")
+	    @Operation(summary  = "Say Hello", description  = "Returns a greeting message")
+	    public String sayHello123() {
+	        return "Hello, World!";
+	    }
+	    
+	    
 }
